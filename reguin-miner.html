@@ -11,7 +11,7 @@ function fBoundary(){
     $("#wgs84orgcj02_xy_textarea").val("");
     var boundary = new BMap.Boundary();
     if($("#baidu_xy_textarea").val()==""){
-        alert("老大！ 先输入个城市名字啊");
+        alert("先输入个城市名字啊");
         return;
     }
     boundary.get($("#baidu_xy_textarea").val(), function(abc){
